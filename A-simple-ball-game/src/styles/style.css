@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+#startButton {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+#startButton:hover {
+  background-color: #21a1f1;
+}
+
+.ball {
+  width: 5vw;
+  height: 5vw;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+/* move(harekat) ball */
+@keyframes moveBall {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/* up and down ball */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%) translateY(0);
+  }
+  50% {
+    transform: translateY(-50%) translateY(-20vh);
+  }
+}
+/* responsive for mobile */
+@media (max-width: 768px) {
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
