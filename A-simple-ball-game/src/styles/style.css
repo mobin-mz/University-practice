@@ -39,7 +39,7 @@ body {
   opacity: 0;
 }
 
-/* move(harekat) ball */
+/* move ball */
 @keyframes moveBall {
   0% {
     left: 0;
@@ -63,4 +63,7 @@ body {
     font-size: 14px;
     padding: 8px 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+  body {
+    background-color: rgb(30, 0, 100);
+  }
+} /*# sourceMappingURL=style.css.map */

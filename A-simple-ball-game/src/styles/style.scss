@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   overflow: hidden;
@@ -29,18 +28,18 @@ body {
 }
 
 .ball {
-  width: 5vw; 
-  height: 5vw; 
+  width: 5vw;
+  height: 5vw;
   background-color: red;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  opacity: 0; 
+  opacity: 0;
 }
 
-/* move(harekat) ball */
+/* move ball */
 @keyframes moveBall {
   0% {
     left: 0;
@@ -49,21 +48,23 @@ body {
     left: 100%;
   }
 }
-
 /* up and down ball */
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-50%) translateY(0);
   }
   50% {
-    transform: translateY(-50%) translateY(-20vh); 
+    transform: translateY(-50%) translateY(-20vh);
   }
 }
-
 /* responsive for mobile */
 @media (max-width: 768px) {
   button {
     font-size: 14px;
     padding: 8px 16px;
   }
-}
+  body {
+    background-color: rgb(30, 0, 100);
+  }
+} /*# sourceMappingURL=style.css.map */
